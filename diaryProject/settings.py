@@ -57,7 +57,7 @@ ROOT_URLCONF = 'diaryProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['diaryProject/templates'],
+        'DIRS':  [os.path.join(BASE_DIR,'diaryProject','templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
